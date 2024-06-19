@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar Flexbox | Putri</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/flexbox-putri/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="top">
+            <h1><a href="#">Hello, it's me Putri!👋 </a></h1>
+        </header>
+
+         <!-- Nav -->
+         <nav class="flex-nav">
+            <a href="#" class="toogleNav">= Menu</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>   
+                 <li><a href="#">Portfolio</a></li>   
+                 <li><a href="#">Contact</a></li>   
+                <li class="social">
+                    <a href="https://www.facebook.com/putriimiila/"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="social">
+                    <a href="https://github.com/ycezz"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="social">
+                    <a href="https://www.instagram.com/putrimiila/"><i class="bi bi-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+          <!-- Image Hero -->
+           <section class="hero">
+            <img src="./images/unsplash-foto1.jpg" alt="">
+           </section>
+
+           <section class="details">
+            <p>I create with flexbox CSS</p>
+            <p>Keep in touch!</p>
+           </section>
+
+           <section class="signup">
+            <form action="" class="signup">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email Address">
+                <input type="submit" placeholder="Submit">
+            </form>
+           </section>
+
+           <footer>
+            <p>&#169; Putri Mila</p>
+           </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+           $('.toogleNav').on('click',function() {
+           $('.flex-nav ul').toggleClass('open');
+           //$('.flex-nav ul').slideToggle();
+           });
+        });
+    </script>
+</body>
+</html>
